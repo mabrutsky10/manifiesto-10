@@ -1,5 +1,16 @@
 import React from 'react';
 
+// Helper function to render text with bold formatting (**text**)
+function renderTextWithBold(text) {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, idx) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={idx} className="font-semibold text-gray-300">{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+}
+
 export default function RightSection({ id, right, t, children }) {
   const isFirst = id === 'identidad';
   return (
@@ -19,7 +30,7 @@ export default function RightSection({ id, right, t, children }) {
                 key={idx}
                 className={isKeyLine ? "text-gray-300 italic font-light border-l-2 border-gray-700/60 pl-6 my-10 text-base md:text-lg" : ""}
               >
-                {line}
+                {renderTextWithBold(line)}
               </p>
             );
           })}
@@ -30,10 +41,10 @@ export default function RightSection({ id, right, t, children }) {
         {right.example && (
           <div className="mt-12 pt-8 border-t border-gray-800">
             <div className="bg-gray-900/30 rounded-lg p-6 border border-gray-800/50">
-              <p className="text-sm text-gray-500 uppercase tracking-wider mb-3">
+              <p className="text-sm text-gray-500 uppercase tracking-wider mb-3 text-center">
                 {right.example.title}
               </p>
-              <p className="text-base text-gray-400 leading-relaxed">
+              <p className="text-base text-gray-400 leading-relaxed text-center">
                 {right.example.content}
               </p>
             </div>

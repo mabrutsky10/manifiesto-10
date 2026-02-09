@@ -17,11 +17,12 @@ export const i18n = {
     },
     // Hero
     hero: {
-      title: "Tres derechos. Un movimiento.",
+      title: ["3 derechos.", "1 movimiento."],
       subtitle: "Manifiesto +10",
       opening: [
         "Creemos en el fútbol que se vive cerca de la gente.",
-        "Este es el fútbol que jugamos todos; +10 nace para defender los derechos del fútbol no profesional y darle la estructura que merece.",
+        "¡El fútbol que jugamos todos!",
+        "+10 nace para defender los derechos del fútbol no profesional y darle la estructura que merece.",
       ],
     },
     // Rights
@@ -29,50 +30,50 @@ export const i18n = {
       identidad: {
         label: "1 — Derecho a la Identidad",
         lines: [
-          "Todo equipo, jugador o torneo tiene derecho a una presencia e historia digital.",
-          "Una página, escudo, perfil, CV deportivo, historia y huella digital.",
-          "Porque lo que no se registra, se pierde. Y lo que se construye con identidad, permanece.",
+          "Todo equipo, jugador o torneo merece contar con **presencia e historia digital propia**.",
+          "Un espacio donde su recorrido tome forma: página, escudo, perfil, CV deportivo, ¡su huella digital!",
+          "Porque lo que no se registra se pierde, y lo que se construye con identidad, trasciende.",
         ],
         example: {
-          title: "Ejemplo",
+          title: "EJEMPLO",
           content: "Perfil del equipo con escudo + historia + registro de goles / CV del jugador",
         },
       },
       conectar: {
         label: "2 — Derecho a Conectar",
         lines: [
-          "El fútbol como cambio e impacto social real.",
-          "Conecta personas, barrios, comunidades. Crea oportunidades, abre caminos, multiplica vínculos.",
-          "Cuando el fútbol conecta, no solo se juega: se transforma en algo más grande que un partido.",
+          "El fútbol como motor real de cambio e impacto social.",
+          "Une personas, barrios, comunidades... Crea oportunidades, abre caminos, multiplica vínculos.",
+          "Cuando el fútbol conecta, no solo se juega: se convierte en algo más grande que un partido.",
         ],
         example: {
-          title: "Ejemplo",
-          content: "Jugador encuentra equipo / equipo encuentra torneo / torneo encuentra predio",
+          title: "EJEMPLO",
+          content: "Jugador encuentra equipo / equipo encuentra torneo / torneo encuentra predios",
         },
       },
       crecer: {
         label: "3 — Derecho a Crecer",
         lines: [
-          "El fútbol se juega y se construye. Evoluciona.",
-          "El crecimiento tiene tres dimensiones inseparables:",
+          "El fútbol no solo se juega: se construye y evoluciona.",
+          "Crecer implica avanzar en tres dimensiones que van de la mano:",
         ],
         subsections: {
           deportivo: {
-            label: "3.a Crecer Deportivamente",
-            content: "Preparación, nutrición, entrenamiento técnico-táctico, competencia organizada.",
+            label: "3.1 Crecer Deportivamente",
+            content: "Preparación física, nutrición, entrenamiento técnico-táctico y competencia organizada.",
           },
           social: {
-            label: "3.b Crecer Socialmente",
-            content: "Amistades, identidad colectiva, sentido de pertenencia.",
+            label: "3.2 Crecer Socialmente",
+            content: "Amistad, identidad colectiva y sentido de pertenencia.",
           },
           economico: {
-            label: "3.c Crecer Económicamente",
-            content: "Sostenibilidad, recursos, apoyo comunitario.",
+            label: "3.3 Crecer Económicamente",
+            content: "Sostenibilidad, recursos y apoyo comunitario.",
           },
         },
         example: {
-          title: "Ejemplo",
-          content: "+Trainer (entrenamiento), Gol Popular (visibilidad), ProTorneos (organización)",
+          title: "EJEMPLO",
+          content: "+Trainer (entrenamiento), Gol Popular (visibilidad), ProTorneos (organización), +10 (conexión)",
         },
       },
     },
@@ -80,21 +81,22 @@ export const i18n = {
     closing: {
       title: "Nuestro compromiso",
       lines: [
-        "+10 no es solo una plataforma. Es una causa.",
-        "No hablamos de sponsors. Hablamos de aliados.",
+        "+10 no es solo una plataforma: es **UNA CAUSA**.",
+        "No hablamos de sponsors, hablamos de aliados.",
         "El fútbol que jugamos todos merece identidad, conexión y crecimiento.",
       ],
     },
     // Footer
     footer: {
       links: {
-        completo: "Leer el completo",
+        completo: "Manifiesto +10 completo",
         plataforma: "Ir a +10",
         productos: "Listado de productos",
         sumar: "Me quiero sumar",
       },
-      copyright: "© +10",
-      contact: "contacto@mas10.com",
+      contact: "hola@mas10.ar",
+      instagram: "@mas10.ar",
+      website: "mas10.ar",
     },
   },
   en: {
@@ -115,11 +117,12 @@ export const i18n = {
     },
     // Hero
     hero: {
-      title: "Three rights. One movement.",
+      title: ["Three rights.", "One movement."],
       subtitle: "Manifesto +10",
       opening: [
         "We believe in soccer that lives close to people.",
-        "This is the soccer we all play; +10 is born to defend the rights of non-professional soccer and give it the structure it deserves.",
+        "The soccer we all play!",
+        "+10 is born to defend the rights of non-professional soccer and give it the structure it deserves.",
       ],
     },
     // Rights
@@ -127,50 +130,50 @@ export const i18n = {
       identidad: {
         label: "1 — Right to Identity",
         lines: [
-          "Every team, player, or tournament has the right to a digital presence and history.",
-          "A page, crest, profile, sports CV, story, and digital footprint.",
-          "Because what isn't recorded, is lost. And what is built with identity, endures.",
+          "Every team, player, or tournament deserves to have their **own digital presence and history**.",
+          "A space where their journey takes shape: page, crest, profile, sports CV, their digital footprint!",
+          "Because what isn't recorded is lost, and what is built with identity transcends.",
         ],
         example: {
-          title: "Example",
+          title: "EXAMPLE",
           content: "Team profile with crest + history + goal records / Player CV",
         },
       },
       conectar: {
         label: "2 — Right to Connect",
         lines: [
-          "Soccer as real social change and impact.",
-          "Connects people, neighborhoods, communities. Creates opportunities, opens paths, multiplies bonds.",
-          "When soccer connects, it's not just played: it transforms into something bigger than a match.",
+          "Soccer as a real engine of change and social impact.",
+          "Unites people, neighborhoods, communities... Creates opportunities, opens paths, multiplies bonds.",
+          "When soccer connects, it's not just played: it becomes something bigger than a match.",
         ],
         example: {
-          title: "Example",
-          content: "Player finds team / team finds tournament / tournament finds field",
+          title: "EXAMPLE",
+          content: "Player finds team / team finds tournament / tournament finds fields",
         },
       },
       crecer: {
         label: "3 — Right to Grow",
         lines: [
-          "Soccer is played and built. It evolves.",
-          "Growth has three inseparable dimensions:",
+          "Soccer is not just played: it is built and evolves.",
+          "Growing means advancing in three dimensions that go hand in hand:",
         ],
         subsections: {
           deportivo: {
-            label: "3.a Grow Sportingly",
-            content: "Preparation, nutrition, technical-tactical training, organized competition.",
+            label: "3.1 Grow Sportingly",
+            content: "Physical preparation, nutrition, technical-tactical training, and organized competition.",
           },
           social: {
-            label: "3.b Grow Socially",
-            content: "Friendships, collective identity, sense of belonging.",
+            label: "3.2 Grow Socially",
+            content: "Friendship, collective identity, and sense of belonging.",
           },
           economico: {
-            label: "3.c Grow Economically",
-            content: "Sustainability, resources, community support.",
+            label: "3.3 Grow Economically",
+            content: "Sustainability, resources, and community support.",
           },
         },
         example: {
-          title: "Example",
-          content: "+Trainer (training), Gol Popular (visibility), ProTorneos (organization)",
+          title: "EXAMPLE",
+          content: "+Trainer (training), Gol Popular (visibility), ProTorneos (organization), +10 (connection)",
         },
       },
     },
@@ -178,21 +181,22 @@ export const i18n = {
     closing: {
       title: "Our commitment",
       lines: [
-        "+10 is not just a platform. It's a cause.",
-        "We don't talk about sponsors. We talk about allies.",
+        "+10 is not just a platform: it's **A CAUSE**.",
+        "We don't talk about sponsors, we talk about allies.",
         "The soccer we all play deserves identity, connection, and growth.",
       ],
     },
     // Footer
     footer: {
       links: {
-        completo: "Read the full version",
+        completo: "Manifesto +10 complete",
         plataforma: "Go to +10",
         productos: "Product list",
         sumar: "I want to join",
       },
-      copyright: "© +10",
-      contact: "contact@mas10.com",
+      contact: "hola@mas10.ar",
+      instagram: "@mas10.ar",
+      website: "mas10.ar",
     },
   },
 };
