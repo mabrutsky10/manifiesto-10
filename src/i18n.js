@@ -34,6 +34,7 @@ export const i18n = {
           "Un espacio donde su recorrido tome forma: página, escudo, perfil, CV deportivo, ¡su huella digital!",
           "Porque lo que no se registra se pierde, y lo que se construye con identidad, trasciende.",
         ],
+        cta: "Conocé más del derecho a la Identidad",
         example: {
           title: "EJEMPLO",
           content: "Perfil del equipo con escudo + historia + registro de goles / CV del jugador",
@@ -46,6 +47,7 @@ export const i18n = {
           "Une personas, barrios, comunidades... Crea oportunidades, abre caminos, multiplica vínculos.",
           "Cuando el fútbol conecta, no solo se juega: se convierte en algo más grande que un partido.",
         ],
+        cta: "Conocé más del derecho a Conectar",
         example: {
           title: "EJEMPLO",
           content: "Jugador encuentra equipo / equipo encuentra torneo / torneo encuentra predios",
@@ -71,6 +73,7 @@ export const i18n = {
             content: "Sostenibilidad, recursos y apoyo comunitario.",
           },
         },
+        cta: "Conocé más del derecho a Crecer",
         example: {
           title: "EJEMPLO",
           content: "+Trainer (entrenamiento), Gol Popular (visibilidad), ProTorneos (organización), +10 (conexión)",
@@ -134,6 +137,7 @@ export const i18n = {
           "A space where their journey takes shape: page, crest, profile, sports CV, their digital footprint!",
           "Because what isn't recorded is lost, and what is built with identity transcends.",
         ],
+        cta: "Learn more about the Right to Identity",
         example: {
           title: "EXAMPLE",
           content: "Team profile with crest + history + goal records / Player CV",
@@ -146,6 +150,7 @@ export const i18n = {
           "Unites people, neighborhoods, communities... Creates opportunities, opens paths, multiplies bonds.",
           "When soccer connects, it's not just played: it becomes something bigger than a match.",
         ],
+        cta: "Learn more about the Right to Connect",
         example: {
           title: "EXAMPLE",
           content: "Player finds team / team finds tournament / tournament finds fields",
@@ -171,6 +176,7 @@ export const i18n = {
             content: "Sustainability, resources, and community support.",
           },
         },
+        cta: "Learn more about the Right to Grow",
         example: {
           title: "EXAMPLE",
           content: "+Trainer (training), Gol Popular (visibility), ProTorneos (organization), +10 (connection)",

@@ -8,6 +8,8 @@ import GrowthSubsections from './components/GrowthSubsections';
 import Closing from './components/Closing';
 import Footer from './components/Footer';
 import Identidad from './pages/Identidad';
+import Conectar from './pages/Conectar';
+import Crecer from './pages/Crecer';
 
 function Home() {
   const [lang, setLang] = useState('es');
@@ -46,6 +48,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/identidad" element={<Identidad />} />
+      <Route path="/conectar" element={<Conectar />} />
+      <Route path="/crecer" element={<Crecer />} />
     </Routes>
   );
 }

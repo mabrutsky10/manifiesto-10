@@ -42,32 +42,14 @@ export default function Header({ lang, setLang, t }) {
     }
   };
 
-  const handleConectarClick = (e) => {
-    e.preventDefault();
+  const handleConectarClick = () => {
     handleMenuClose();
-    if (isHomePage) {
-      scrollToSection('conectar');
-    } else {
-      navigate('/');
-      // Wait for navigation then scroll
-      setTimeout(() => {
-        scrollToSection('conectar');
-      }, 100);
-    }
+    navigate('/conectar');
   };
 
-  const handleCrecerClick = (e) => {
-    e.preventDefault();
+  const handleCrecerClick = () => {
     handleMenuClose();
-    if (isHomePage) {
-      scrollToSection('crecer');
-    } else {
-      navigate('/');
-      // Wait for navigation then scroll
-      setTimeout(() => {
-        scrollToSection('crecer');
-      }, 100);
-    }
+    navigate('/crecer');
   };
 
   return (
@@ -101,32 +83,20 @@ export default function Header({ lang, setLang, t }) {
               >
                 {t.header.nav.identidad}
               </Link>
-              {isHomePage && (
-                <>
-                  <span className="text-gray-600">/</span>
-                  <a
-                    href="#conectar"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection('conectar');
-                    }}
-                    className="hover:text-gray-200 transition-colors focus-ring rounded"
-                  >
-                    {t.header.nav.conectar}
-                  </a>
-                  <span className="text-gray-600">/</span>
-                  <a
-                    href="#crecer"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection('crecer');
-                    }}
-                    className="hover:text-gray-200 transition-colors focus-ring rounded"
-                  >
-                    {t.header.nav.crecer}
-                  </a>
-                </>
-              )}
+              <span className="text-gray-600">/</span>
+              <Link
+                to="/conectar"
+                className="hover:text-gray-200 transition-colors focus-ring rounded"
+              >
+                {t.header.nav.conectar}
+              </Link>
+              <span className="text-gray-600">/</span>
+              <Link
+                to="/crecer"
+                className="hover:text-gray-200 transition-colors focus-ring rounded"
+              >
+                {t.header.nav.crecer}
+              </Link>
             </div>
 
             {/* Mobile Menu Button - visible only on mobile */}

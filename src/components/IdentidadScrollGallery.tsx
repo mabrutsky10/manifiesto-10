@@ -188,26 +188,46 @@ function MediaLayer({
     if (item.type === 'video' && videoRef.current) {
       const video = videoRef.current;
       
-      // Subscribe to opacity changes to control video playback
-      const unsubscribeOpacity = opacity.on('change', (latestOpacity) => {
+      // Function to handle video playback
+      const handleVideoPlayback = (latestOpacity: number) => {
         if (latestOpacity > 0.5) {
           // Play video when opacity is high (visible)
-          video.play().catch((error) => {
-            console.error('Error playing video:', error);
-          });
+          if (video.paused) {
+            video.play().catch((error) => {
+              console.error('Error playing video:', error);
+            });
+          }
         } else {
           // Pause video when opacity is low (not visible)
-          video.pause();
+          if (!video.paused) {
+            video.pause();
+          }
         }
-      });
+      };
+      
+      // Check initial opacity
+      const initialOpacity = opacity.get();
+      handleVideoPlayback(initialOpacity);
+      
+      // Subscribe to opacity changes to control video playback
+      const unsubscribeOpacity = opacity.on('change', handleVideoPlayback);
+      
+      // Also check visibility state
+      if (isVisible && initialOpacity > 0.5) {
+        video.play().catch((error) => {
+          console.error('Error playing video on mount:', error);
+        });
+      }
       
       return () => {
         unsubscribeOpacity();
         // Pause video on unmount
-        video.pause();
+        if (videoRef.current) {
+          videoRef.current.pause();
+        }
       };
     }
-  }, [item.type, opacity]);
+  }, [item.type, opacity, isVisible]);
 
   return (
     <motion.div
@@ -243,6 +263,18 @@ function MediaLayer({
           muted
           loop
           preload="auto"
+          onLoadedData={() => {
+            console.log('Video loaded:', item.src, 'isVisible:', isVisible, 'opacity:', opacity.get());
+            // Ensure video is ready to play
+            if (videoRef.current && isVisible && opacity.get() > 0.5) {
+              videoRef.current.play().catch((error) => {
+                console.error('Error playing video on load:', error);
+              });
+            }
+          }}
+          onError={(e) => {
+            console.error('Video error:', item.src, e);
+          }}
           aria-hidden="true"
         />
       )}
