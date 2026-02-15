@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { i18n } from './i18n';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -6,8 +7,9 @@ import RightSection from './components/RightSection';
 import GrowthSubsections from './components/GrowthSubsections';
 import Closing from './components/Closing';
 import Footer from './components/Footer';
+import Identidad from './pages/Identidad';
 
-function App() {
+function Home() {
   const [lang, setLang] = useState('es');
   const t = i18n[lang];
 
@@ -36,6 +38,15 @@ function App() {
       
       <Footer t={t} />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/identidad" element={<Identidad />} />
+    </Routes>
   );
 }
 
